@@ -1,6 +1,7 @@
 {
     "name": "snowfire/sprinkles",
-    "description": "",
+    "description": "Add Commands, Storage, Events and Value Objects to your Laravel project. Heavily inspired by laracasts.com",
+    "license": "MIT",
     "authors": [
         {
             "name": "Markus Hedlund",
