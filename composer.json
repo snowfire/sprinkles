@@ -1,0 +1,23 @@
+{
+    "name": "team_snowfire/sprinkles",
+    "description": "",
+    "authors": [
+        {
+            "name": "Markus Hedlund",
+            "email": "markus@snowfire.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Snowfire\\Sprinkles\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
