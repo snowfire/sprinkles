@@ -16,13 +16,16 @@ abstract class Repository {
 	{
 		if ($search)
 		{
-			foreach ($columns as $column)
+			$query->where(function($query) use ($search, $columns)
 			{
-				$query->orWhere($column, 'LIKE', "%{$search}%");
-			}
+				foreach ($columns as $column)
+				{
+					$query->orWhere($column, 'LIKE', "%{$search}%");
+				}
+			});
 		}
 
 		return $query;
 	}
 
-} 
+}
